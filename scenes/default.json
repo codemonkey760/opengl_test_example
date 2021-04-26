@@ -1,0 +1,141 @@
+{
+  "name": "default",
+  "active_camera": "cameraComponent",
+  "scene_root": {
+    "name": "sceneRoot",
+    "components": [
+      {
+        "type": "FPSCounterComponent",
+        "name": "FPSCounterComponent",
+        "enabled": true
+      }
+    ],
+    "children": [
+      {
+        "name": "texturedQuad1",
+        "components": [
+          {
+            "type": "ModelRendererComponent",
+            "name": "texturedQuad1.ModelRendererComponent",
+            "enabled": true,
+            "model": "quadModel",
+            "material": "colorSplotch"
+          },
+          {
+            "type": "RotationComponent",
+            "name": "texturedQuad1.RotationComponent",
+            "enabled": true
+          },
+          {
+            "type": "TransformComponent",
+            "position": {
+              "x": -2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "orientation": {
+              "w": 1.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        ],
+        "children": []
+      },
+      {
+        "name": "texturedQuad2",
+        "components": [
+          {
+            "type": "ModelRendererComponent",
+            "name": "texturedQuad2.ModelRendererComponent",
+            "enabled": true,
+            "model": "quadModel",
+            "material": "colorSplotch"
+          },
+          {
+            "type": "RotationComponent",
+            "name": "texturedQuad2.RotationComponent",
+            "enabled": true,
+            "rot_rate": -45.0
+          },
+          {
+            "type": "TransformComponent",
+            "position": {
+              "x": 2.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "orientation": {
+              "w": 1.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        ],
+        "children": []
+      },
+      {
+        "name": "camera",
+        "components": [
+          {
+            "type": "CameraComponent",
+            "name": "cameraComponent",
+            "enabled": true
+          },
+          {
+            "type": "KeyboardControllerComponent",
+            "name": "keyboardControllerComponent",
+            "enabled": true
+          },
+          {
+            "type": "MouseControllerComponent",
+            "name": "mouseControllerComponent",
+            "enabled": true
+          },
+          {
+            "type": "PositionPrinterComponent",
+            "name": "cameraPositionPrinterComponent",
+            "enabled": true
+          },
+          {
+            "type": "ZoomTimerComponent",
+            "name": "zoomTimerComponent",
+            "enabled": false
+          },
+          {
+            "type": "TransformComponent",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 4.0
+            },
+            "orientation": {
+              "w": 1.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          }
+        ],
+        "children": []
+      }
+    ]
+  }
+}
