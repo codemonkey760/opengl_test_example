@@ -1,6 +1,5 @@
 import numpy as np
 import opengl_test
-from opengl_test import glfw
 
 
 class ZoomTimerComponent(opengl_test.PythonComponent):
